@@ -104,7 +104,7 @@ section {
 
 .title {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   color: palevioletred;
   font-size: 2.2em;
   font-weight: 800;
@@ -115,14 +115,172 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .card {
   background-color: antiquewhite;
-  width: 21.25em;
   box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
   border-radius: 10px;
   padding: 25px;
   margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: blueviolet;
+  font-size: 2em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: plum;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  background-color: azure;
+}
+
+.projects.content {
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: mistyrose;
+  border: 1px solid white;
+  min-height: 14em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: deeppink;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* portfolio styles */
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.subtitle {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.logo-wrapper {
+  height: 350px;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+.subtitle:hover {
+  font-weight: 600;
+  color: aqua;
+}
+
+img.darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.more-details {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+.more-details:hover {
+  color: tomato;
+}
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: gray;
+}
+
+.contact .info p {
+  font-size: 1.2em;
+}
+
+.footer {
+  background-color: wheat;
+  color: black;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: blueviolet;
+}
+
+.footer .social-icons a {
+  font-size: 1.3em;
+  color: cadetblue;
 }
